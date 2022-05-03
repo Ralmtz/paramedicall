@@ -1,0 +1,10 @@
+.row-dos{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    .row-dos{
+        flex-direction: row;
+    }
+}
