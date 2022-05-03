@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <div>
       {
-        width > 720 ? <div className='navbar'>
+        width > 520 ? <div className='navbar'>
           <div>
             <a href="/">
               <img className='img-logo-nav' src={Logo} alt='Logo' />
