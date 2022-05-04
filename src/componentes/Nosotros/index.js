@@ -3,8 +3,28 @@ import '../base.css'
 import './index.css';
 import imgHeaderNosotros from './HeaderNosotros.png';
 import IconoMision from './IconoMision.png';
-
+import IconoVision from './IconoVision.png';
+import paramedicoMision from './paramedicoMision.jpg';
+import paramedicoVision from './paramedicoVision.jpg';
+import IconosValores from './IconosValores.png';
+import IconosValoresMovil from './IconosValoresMovil.png';
+import ImageGallery from 'react-image-gallery';
+import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css';
 function nosotros() {
+    const images = [
+        {
+            original: 'https://picsum.photos/id/1018/1000/600/',
+            thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        },
+        {
+            original: 'https://picsum.photos/id/1015/1000/600/',
+            thumbnail: 'https://picsum.photos/id/1015/250/150/',
+        },
+        {
+            original: 'https://picsum.photos/id/1019/1000/600/',
+            thumbnail: 'https://picsum.photos/id/1019/250/150/',
+        },
+    ];
     return (<>
         <div className="container-logo-nosotros">
             <img className='img-nosotros' src={imgHeaderNosotros} alt='Header Nosotros' />
@@ -31,13 +51,55 @@ function nosotros() {
         </div>
         <div className='c-mision'>
             <div className='item-mision'>
-                <img src={IconoMision} alt='Icono Misión'/>
-                <h2 className='h2-mision'>MISIÓN</h2>
+                <div className='item-mision-logo'>
+                    <img src={IconoMision} alt='Icono Misión' />
+                    <h2 className='h2-mision'>MISIÓN</h2>
+                </div>
+                <p className='p-mision'>
+                    <strong>Ser líderes en la presentación de servicios médicos prehospitalarios y salud ocupacional.</strong> Logrando ser la mejor opción del mercado, con altos estándares de calidad y un equipo certificado de profesionales en la salud. Consolidándonos como una empresa Rentable, Eficiente y Socialmente Responsable.
+                </p>
             </div>
             <div className='item-mision'>
+                <img className='img-paramedicos' src={paramedicoMision} alt='Paramédicos' />
+            </div>
+        </div>
+        <div className='c-vision'>
+            <div className='item-mision'>
+                <img className='img-paramedicos' src={paramedicoVision} alt='Paramédicos' />
+            </div>
+            <div className='item-mision'>
+                <div className='item-mision-logo'>
+                    <img src={IconoVision} alt='Icono Misión' />
+                    <h2 className='h2-mision'>VISIÓN</h2>
+                </div>
                 <p className='p-mision'>
-                    Ser líderes en la presentación de servicios médicos prehospitalarios y salud ocupacional. Logrando ser la mejor opción del mercado, con altos estándares de calidad y un equipo certificado de profesionales en la salud. Consolidándonos como una empresa Rentable, Eficiente y Socialmente Responsable.
+                    <strong>Ser una empresa de clase mundial en la atención médica prehospitalaria y salud ocupacional,</strong> que garantice la sustentabilidad y el crecimiento de nuestro liderazgo a través de la innovación y mejora continúa.
                 </p>
+            </div>
+        </div>
+        <div className='c-valores'>
+            <h2 className='h2-valores'>NUESTROS VALORES</h2>
+            <div className='i-valores'>
+                <picture>
+                    <source srcset={IconosValoresMovil} media="(max-width: 600px)" />
+                    <img src={IconosValores} alt="Icono Valores" />
+                </picture>
+            </div>
+        </div>
+        <div className='c-slider'>
+            <p className='p-slider'>NUESTRO MEJOR SERVICIO ES OFRECER UN</p>
+            <p className='p-slider'>TRATO CÁLIDO Y HUMANO</p>
+            <div className='i-slider'>
+                <div className='i-slider-2'>
+                <ImageGallery items={images}
+                    showBullets={true}
+                    showIndex={true}
+                    showThumbnails={true}
+                    lazyLoad={true}
+                    showPlayButton={false}
+                    autoPlay={true}
+                />
+                </div>
             </div>
         </div>
     </>);

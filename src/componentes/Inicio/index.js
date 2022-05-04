@@ -1,50 +1,87 @@
 import React from 'react';
-// import HeaderInicio from './FOTO-HEADER-INCIO.png'
+import HeaderInicio from './HeaderInicio.png';
+import './index.css';
+import '../base.css';
 import ImageGallery from 'react-image-gallery';
 import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css';
-// import estilos from '../../../node_modules'
+import LogoCliente1 from './LOGOS-CLIENTES-01.png';
+import LogoCliente2 from './LOGOS-CLIENTES-02.png';
+import LogoCliente3 from './LOGOS-CLIENTES-03.png';
+import LogoCliente4 from './LOGOS-CLIENTES-04.png';
+import LogoCliente5 from './LOGOS-CLIENTES-05.png';
+import LogoCliente6 from './LOGOS-CLIENTES-06.png';
+import LogoCliente7 from './LOGOS-CLIENTES-07.png';
+import VideoParamedicall from './VideoParamedicall.mp4'
 function Inicio() {
   const images = [
     {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+      original: LogoCliente1,
     },
     {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
+      original: LogoCliente2,
     },
     {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
+      original: LogoCliente3,
+    },
+    {
+      original: LogoCliente4,
+    },
+    {
+      original: LogoCliente5,
+    },
+    {
+      original: LogoCliente6,
+    },
+    {
+      original: LogoCliente7,
     },
   ];
 
   return (
-    // <div>
-    //     <div className=''>
-    //     {/* <h2>SOMOS TU</h2>
-    //     <h2>APOYO MÉDICO</h2> */}
-    //     {/* <img src={HeaderInicio} alt='Header'/> */}
-    //     <h1>SECCIÓN DE INICIO</h1>
-
-    //     </div>
-
-    // </div>
     <div>
-      <ImageGallery items={images} 
-       showBullets={true}
-       showIndex={true}
-       showThumbnails={true}
-       lazyLoad={true}
-       showPlayButton={false}
-       autoPlay={true}
-       />
-
-       <h2>¿Por qué lo usamos?</h2>
-       <p>
-       Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
-       </p>
-      
+      <div className="container-logo-encabezado">
+        <img className='img-header' src={HeaderInicio} alt='Header Inicio' />
+        <div className='text-encima'>
+          <p className='t-1'>SEGURIDAD ES</p>
+          <p className='t-2'>CONTAR CON</p>
+          <p className='t-3'>PARAMEDICALL</p>
+        </div>
+      </div>
+      <div className='c-slider-inicio'>
+        <p className='p-slider-inicio'>
+          CONFÍAN EN NOSOTROS
+              </p>
+        <div className='i-slider-inicio'>
+          <div className='i-slider-2-inicio'>
+            <ImageGallery
+              items={images}
+              showBullets={false}
+              showIndex={false}
+              showThumbnails={false}
+              lazyLoad={true}
+              showPlayButton={false}
+              autoPlay={true}
+              showFullscreenButton={false}
+              showNav={false}
+              disableSwipe={false}
+            />
+          </div>
+        </div>
+      </div>
+      <div className='c-video'>
+        <p>NUESTRO MEJOR SERVICIO ES OFRECER UN</p>
+        <p>TRATO CÁLIDO Y HUMANO</p>
+        <div className='t-video'>
+          <video width="320" height="240" controls autoPlay style={{backgroundColor:'black'}}>
+            <source src={VideoParamedicall} type="video/mp4" />
+            {/* <source src="movie.ogg" type="video/ogg"/> */}
+Your browser does not support the video tag.
+</video>
+        </div>
+      </div>
+      <div className='c-servicios-inicio'>
+        <h2>BRINDAMOS LOS SIGUIENTES SERVICIOS</h2>
+      </div>
     </div>
   );
 }

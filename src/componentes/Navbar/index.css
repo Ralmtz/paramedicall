@@ -26,7 +26,8 @@
 }
 
 .img-logo-nav{
-    height: 60px;
+    /* height: 1px; */
+    /* width: 30px; */
 }
 
 @media only screen and (max-width: 720px) {
