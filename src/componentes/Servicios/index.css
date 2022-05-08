@@ -1,0 +1,55 @@
+.container-logo-encabezado-Servicios{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}.c-nuestrasAmbulancias {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5% 2% 5%;
+}
+
+.h1-nuestrasAmbulancias {
+    color: #ea0e2c;
+    padding-bottom: 10px;
+}
+
+.p-nuestrasAmbulancias {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    /* font-size: ; */
+}
+.c-equipadasCon{
+    display: flex;
+    flex-direction: column ;
+    padding: 2% 5% 2% 5%;
+    justify-content: center;
+}
+.h2-equipadas{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+.p-dentrode{
+    padding-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.sc-equipadasCon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.i-equipadasCon{
+    padding-right: 15%;
+    white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.i-equipadasCon-2{
+
+}
+ul{
+    list-style-position: inside;
+}
