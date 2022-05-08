@@ -1,51 +1,258 @@
-.c-slider-inicio{
-    padding-bottom: 30px;
-  }
-  
-  .p-slider-inicio:nth-child(1){
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-  }
-  
-  .p-slider-inicio:nth-child(2){
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-      color: #ea0e2c;
-      padding-bottom: 15px;
-  }
-  .i-slider-inicio{
-      display: flex;
-      justify-content: center;
-  }
-  .i-slider-2-inicio{
-      max-width: 50%;
+.container-logo-encabezado-Inicio {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background-color: #ea0e2c;
+}
+
+.c-apoyoMedico {
+  background-color: #ea0e2c;
+  display: flex;
+  align-items: center;
+  padding: 0 15% 0 15%;
+}
+.i-apoyoMedico:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+}
+
+.p-apoyoMedico {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6em;
+}
+
+.p-apoyoMedico-2 {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+}
+
+.p-apoyoMedico-3 {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.4em;
+}
+
+.imgMedico {
+  width: 270px;
+}
+
+.c-slider-inicio {
+  padding-bottom: 30px;
+}
+
+.p-slider-inicio:nth-child(1) {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6em;
+  padding-bottom: 10px;
+}
+
+.p-slider-inicio:nth-child(2) {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #ea0e2c;
+  padding-bottom: 15px;
+}
+
+.i-slider-inicio {
+  display: flex;
+  justify-content: center;
+}
+
+.i-slider-2-inicio {
+  max-width: 50%;
+}
+
+.c-video {
+  background-color: #ea0e2c;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 1.3em;
+}
+
+.t-video {
+  display: flex;
+  justify-content: center;
+}
+
+.c-servicios-inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.i-serviciosInicio:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.i-serviciosInicio:nth-child(2) {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.dividir {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dividir-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.dividir-3 {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.img-servicios-lista {
+  width: 40px;
+  height: 40px;
+}
+
+.t-serv1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn-servicios {
+  background-color: #ea0e2c;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 25px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.img-ambulancia-serv {
+  width: 400px;
+}
+
+.p-servicios:nth-child(1) {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.p-servicios:nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.text-servicios-inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-text-servicio {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  padding-left: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+  .img-servicios-lista {
+    width: 25px;
+    height: 25px;
   }
 
-  .c-video{
-    background-color: #ea0e2c;
+  .p-text-servicio {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    padding-left: 5px;
+    font-size: 12px;
+  }
+
+  .p-servicios:nth-child(1) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     text-align: center;
+  }
+
+  .p-servicios:nth-child(2) {
     font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    font-size: 1.3em;
+    font-size: 14px;
+    text-align: center;
   }
 
-  .t-video{
-    display: flex;
-    justify-content: center;
-    width: 420px;
-    height: 360px;
+  .img-ambulancia-serv {
+    width: 300px;
   }
-  .c-servicios-inicio{
-      
-  }
+}
 
-  
 @media only screen and (max-width: 600px) {
-    .i-slider-2-inicio{
-        width: 100%;
-    }
-    .t-video{
-        width: 380px;
-        height: 360px;
-    }
+  .c-apoyoMedico {
+    flex-direction: column;
+  }
+  .p-apoyoMedico {
+    font-size: 14px;
+  }
+  .imgMedico {
+    width: 230px;
+  }
+  
+  .p-apoyoMedico-2 {
+    font-size: 16px;
+  }
+  
+  .p-apoyoMedico-3 {
+    line-height: 2;
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+  .i-slider-2-inicio {
+    width: 100%;
+  }
+
+  .c-servicios-inicio {
+    flex-direction: column;
+  }
+
+  .dividir {
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+
+  .img-ambulancia-serv {
+    width: 250px;
+  }
+
+  .p-slider-inicio:nth-child(1) {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+  .c-video {
+    font-size: 14px;
+  }
 }

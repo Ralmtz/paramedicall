@@ -48,7 +48,7 @@ function Navbar() {
             <div>
               {
                 open ? <div className='navbar-movil'>
-                  <ul className='navbar-list'>
+                  <ul className='navbar-list' onClick={()=>setOpen(false)}>
                     <li className='list-item'>
                       <Link to="/">INICIO</Link>
                     </li>
