@@ -131,7 +131,7 @@ function Inicio() {
         <p>NUESTRO MEJOR SERVICIO ES OFRECER UN</p>
         <p>TRATO CÁLIDO Y HUMANO</p>
         <div className='t-video'>
-          <video width={width > 600 ? 600 : 200} height={width > 600 ? 450 : 200} controls autoPlay muted style={{ backgroundColor: 'black' }}>
+          <video width={width > 600 ? 600 : 200} height={width > 600 ? 450 : 200} controls autoPlay style={{ backgroundColor: 'black' }}>
             <source src={VideoParamedicall} type="video/mp4" />
               Your browser does not support the video tag.
           </video>
