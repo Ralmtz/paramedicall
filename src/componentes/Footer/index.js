@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
-import LineaImg from './lineaVidaHeader.png';
-import Logo from './Logo.jpg';
+import LineaImg from './LINEA-VIDA-1080.svg';
+import Logo from './logotipo-600x130.svg';
 import iconoFB from './iconoFB.svg';
 import iconoIG from './iconoIG.svg';
 import iconoWPP from './iconoWPP.svg';

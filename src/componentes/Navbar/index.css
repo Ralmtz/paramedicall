@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
+    padding: 2% 0 2% 0;
 }
 
 .navbar-list{
@@ -26,8 +27,8 @@
 }
 
 .img-logo-nav{
-    /* height: 1px; */
-    width: 200px;
+    width: 100%;
+    margin-left: 10%;
 }
 
 @media only screen and (max-width: 720px) {
@@ -55,12 +56,20 @@
        font-size: 12px;
     }
 }
+@media only screen and (max-width: 820px) {
+    .list-item{
+       font-size: 16px;
+    }
+    .img-logo-nav{
+        width: 70%;
+    }
+}
 
 
 @media only screen and (max-width: 520px) {
     .img-logo-nav{
         height: 60px;
-        width: 207px;
+        width: 150px;
     }
     .navbar-movil{
         background-color: #ea0e2c;

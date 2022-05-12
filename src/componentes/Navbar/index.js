@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from './Logo.png'
+import Logo from './Logo.svg'
 import { Link } from "react-router-dom";
 import useWindowDimensions from '../../Helpers'
 import { FiAlignJustify } from "react-icons/fi";

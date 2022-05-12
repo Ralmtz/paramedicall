@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import ImgContacto from './Contacto.png';
+import ImgContacto from './FOTO-HEADER-CONTACTO.png';
 import ImgConsulta from './Consulta.png';
 function Contacto() {
   return (

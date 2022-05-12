@@ -1,7 +1,7 @@
 import React from 'react';
 import '../base.css'
 import './index.css';
-import imgHeaderNosotros from './HeaderNosotros.png';
+import imgHeaderNosotros from './FOTO-HEADER-NOSOTROS.png';
 import IconoMision from './IconoMision.png';
 import IconoVision from './IconoVision.png';
 import paramedicoMision from './paramedicoMision.jpg';
@@ -93,7 +93,7 @@ function nosotros() {
                 <div className='i-slider-2'>
                 <ImageGallery items={images}
                     showBullets={true}
-                    showIndex={true}
+                    showIndex={false}
                     showThumbnails={true}
                     lazyLoad={true}
                     showPlayButton={false}

@@ -1,8 +1,3 @@
-.footer{
- /* min-height: 150px;
- max-height: 300px; */
-}
-
 footer{
     background-color: #ea0e2c;
 }
@@ -16,7 +11,6 @@ footer{
 }
 
 .img-lineaVida{
-    height: 80px;
     width: 100%;
 }
 .atribucion{
@@ -34,7 +28,7 @@ footer{
 .p-text{
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 32px;
     margin: 0px;
     padding: 0;
 }
@@ -47,18 +41,14 @@ footer{
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
+    padding-left: 5%;
+    padding-bottom: 3%;
   }
   
   .item-logo:nth-child(1) {
     display: flex;
     flex-direction: column;
-    
-    /* display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0; */
+    /* padding-right: 5%; */
   }
   
   .item-logo:nth-child(2) {
@@ -66,31 +56,15 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    /* display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0; */
   }
 
   .icon-redes{
       padding-right: 5px;
   }
-
-  .container-imgLogo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: normal;
-    align-content: normal;
-  }
-
   
  .img-logo-footer{
-   padding: 0px 10px 0px 10px;
-   width: 70%;
+   margin: 0px 5% 0px 5%;
+   width: 100%;
  }
 
  .img-logo-r{
@@ -118,7 +92,7 @@ footer{
   }
   .img-lineaVida{
     margin-top: 20px;
-    height: 70px;
+    /* height: 70px; */
     width: 100%;
   }
   .atribucion{
@@ -146,7 +120,12 @@ footer{
   }
 
   .img-logo-footer{
-    width: 230px;
+    width: 200px;
+  }
+  .img-lineaVida{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
   }
 
 }
@@ -159,7 +138,7 @@ footer{
   }
 
   .img-logo-footer{
-    width: 200px;
+    width: 150px;
   }
 
 }

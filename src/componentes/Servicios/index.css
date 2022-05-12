@@ -53,21 +53,24 @@
 
 }
 
-.i-equipadasCon-2 {}
+.i-equipadasCon-2 {
+
+}
 
 ul {
     list-style-position: inside;
 }
 
 .c-tabla {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0% 15% 2% 15%;
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
 .i-tabla {
-    font-family: 'Open Sans', sans-serif;
+    /* width: 100%; */
+}
+.img-tabla-comp{
+    width: 100%;
 }
 
 .i-tabla ul {
@@ -107,6 +110,7 @@ td {
 .h2-tituloServicios{
     font-family: 'Poppins', sans-serif;
     color: #ea0e2c;
+    padding-top: 5%;
 }
 .p-textServicios{
     text-align: justify;
@@ -126,6 +130,8 @@ td {
 .c-preguntas{
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .h2-preguntasF{
     background-color: #ea0e2c;
@@ -133,6 +139,7 @@ td {
     color: #ffffff;
     padding: 3% 0 3% 0;
     font-family: 'Poppins', sans-serif;
+    font-size: 48px;
 }
 .i-preguntas{
     display: flex;
@@ -157,6 +164,15 @@ td {
     .h2-ventajasAhorros{
        padding-right: '20px';
     }
+    .i-equipadasCon {
+        font-size: 12px;
+    }
+    .i-equipadasCon-2 {
+        font-size: 12px;
+    }
+    .h2-preguntasF{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -165,5 +181,11 @@ td {
     }
     .c-panel-1{
         flex-direction: column-reverse;
+    }
+    .i-equipadasCon {
+        font-size: 10px;
+    }
+    .i-equipadasCon-2 {
+        font-size: 10px;
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderInicio from './HeaderInicio.png';
+import HeaderInicio from './FOTO-HEADER-INCIO.png';
 import './index.css';
 import '../base.css';
 import ImageGallery from 'react-image-gallery';
@@ -17,15 +17,16 @@ import ImgAmbulancia from './ambulancia.png'
 import useWindowDimensions from '../../Helpers';
 import IconoMision from './IconoMision.png';
 
-import LogoMovilCliente1 from './CLIENTES-MOBILE-01.png';
-import LogoMovilCliente2 from './CLIENTES-MOBILE-02.png';
-import LogoMovilCliente3 from './CLIENTES-MOBILE-03.png';
-import LogoMovilCliente4 from './CLIENTES-MOBILE-04.png';
-import LogoMovilCliente5 from './CLIENTES-MOBILE-05.png';
-import LogoMovilCliente6 from './CLIENTES-MOBILE-06.png';
-import LogoMovilCliente7 from './CLIENTES-MOBILE-07.png';
-import LogoMovilCliente8 from './CLIENTES-MOBILE-08.png';
-import LogoMovilCliente9 from './CLIENTES-MOBILE-09.png';
+import LogoMovilCliente1 from './LOGOS-CLIENTES-01-MOVIL.png';
+import LogoMovilCliente2 from './LOGOS-CLIENTES-02-MOVIL.png';
+import LogoMovilCliente3 from './LOGOS-CLIENTES-03-MOVIL.png';
+import LogoMovilCliente4 from './LOGOS-CLIENTES-04-MOVIL.png';
+import LogoMovilCliente5 from './LOGOS-CLIENTES-05-MOVIL.png';
+import LogoMovilCliente6 from './LOGOS-CLIENTES-06-MOVIL.png';
+import LogoMovilCliente7 from './LOGOS-CLIENTES-07-MOVIL.png';
+import LogoMovilCliente8 from './LOGOS-CLIENTES-08-MOVIL.png';
+import LogoMovilCliente9 from './LOGOS-CLIENTES-09-MOVIL.png';
+import LogoMovilCliente10 from './LOGOS-CLIENTES-10-MOVIL.png';
 
 function Inicio() {
   const { width } = useWindowDimensions();
@@ -82,6 +83,9 @@ function Inicio() {
     {
       original: LogoMovilCliente9,
     },
+    {
+      original: LogoMovilCliente10,
+    },
   ];
 
   return (
@@ -107,9 +111,7 @@ function Inicio() {
         </div>
       </div>
       <div className='c-slider-inicio'>
-        <p className='p-slider-inicio'>
-          CONFÍAN EN NOSOTROS
-              </p>
+        <p className='p-slider-inicio'>CONFÍAN EN NOSOTROS</p>
         <div className='i-slider-inicio'>
           <div className='i-slider-2-inicio'>
             <ImageGallery
@@ -121,7 +123,7 @@ function Inicio() {
               showPlayButton={false}
               autoPlay={true}
               showFullscreenButton={false}
-              showNav={false}
+              showNav={true}
               disableSwipe={false}
             />
           </div>
@@ -129,9 +131,9 @@ function Inicio() {
       </div>
       <div className='c-video'>
         <p>NUESTRO MEJOR SERVICIO ES OFRECER UN</p>
-        <p>TRATO CÁLIDO Y HUMANO</p>
+        <p style={{paddingBottom: '20px'}}>TRATO CÁLIDO Y HUMANO</p>
         <div className='t-video'>
-          <video width={width > 600 ? 600 : 200} height={width > 600 ? 450 : 200} controls autoPlay style={{ backgroundColor: 'black' }}>
+          <video width={width > 600 ? 800 : 300} height={width > 600 ? 500 : 200} controls  style={{ backgroundColor: 'black' }}>
             <source src={VideoParamedicall} type="video/mp4" />
               Your browser does not support the video tag.
           </video>

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './index.css';
 import '../base.css';
 import HeaderServicios from './FOTO-HEADER-SERVICIOS.png';
-import paramedicallLogo from './paramedicallLogo.jpg';
 import IconoArea from './ICONO-AREAPARAMEDICALL.png';
 import IconoCMI from './ICONO-CMI.png';
 import IconoCME from './ICONO-CME.png';
 import IconoOutSourcing from './ICONO-OUTSOURCING.png';
 import IconoTraslado from './ICONO-TRASLADO.png';
+import ImgTablaComparativa from './tabla-1600.png'
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -66,52 +66,13 @@ function Servicios() {
         </div>
         <div className='c-tabla'>
             <div className='i-tabla'>
-                <table>
-                    <tr>
-                        <th></th>
-                        <th><img className='img-logoTabla' src={paramedicallLogo} alt='Logo' /></th>
-                        <th className='th-otros'>OTROS</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Tipo de Ambulancia</strong></td>
-                        <td>Terapia Intensiva</td>
-                        <td>Básica</td>
-                    </tr>
-                    <tr>
-                        <td style={{ height: '100px' }}><strong>Tiempo de Respuesta</strong></td>
-                        <td>
-                            <ul>
-                                <li>Emergencias: 15 min</li>
-                                <li>Urgencias: 25 min</li>
-                                <li>Consultas médicas: 60 min</li>
-                            </ul>
-                        </td>
-                        <td style={{ height: '100px' }}>
-                            <ul>
-                                <li>Emergencias: 20 min</li>
-                                <li>Urgencias: 30 min</li>
-                                <li>Consultas médicas: 90 min</li>
-
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tripulación a Bordo</strong></td>
-                        <td>
-                            <ul>
-                                <li>Médico Urgenciologo</li>
-                                <li>Enfermero (a)</li>
-                                <li>Paramédico</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Médico general</li>
-                                <li>Paramédico</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <picture>
+                    <source srcset={ImgTablaComparativa} media="(max-width: 400px)" width='100%'/>
+                    <source srcset={ImgTablaComparativa} media="(max-width: 700px)" width='100%'/>
+                    <source srcset={ImgTablaComparativa} media="(max-width: 1000px)" width='100%'/>
+                    <img src={ImgTablaComparativa} alt="Icono Valores" width='100%'/>
+                </picture>
+                
             </div>
         </div>
         <div className='c-listadoServicios'>
@@ -269,7 +230,7 @@ function Servicios() {
                     </div>
                 </AccordionDetails>
             </Accordion>
-            <div className='c-panel-1'>
+            <div className='c-panel-1' style={{paddingBottom: '50px'}}>
                 <div className='i-panel-1'>
                     <h2 className='h2-tituloServicios'>TRASLADO DE PACIENTES</h2>
                     <p className='p-textServicios'>
