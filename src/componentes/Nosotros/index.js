@@ -73,10 +73,10 @@ function nosotros() {
     return (<>
         <div className="container-logo-nosotros">
             <img className='img-nosotros' src={imgHeaderNosotros} alt='Header Nosotros' />
-            <div className='text-encima'>
-                <p className='t-1'>SOBRE NOSOTROS</p>
-                <p className='t-2'>TU APOYO MÉDICO</p>
-                <p className='t-3'>CUANDO LO NECESITAS</p>
+            <div className='text-encima-nosotros'>
+                <p className='t-1-nosotros'>SOBRE NOSOTROS</p>
+                <p className='t-2-nosotros'>TU APOYO MÉDICO</p>
+                <p className='t-3-nosotros'>CUANDO LO NECESITAS</p>
             </div>
         </div>
         <div className='row'>
@@ -126,7 +126,7 @@ function nosotros() {
             <h2 className='h2-valores'>NUESTROS VALORES</h2>
             <div className='i-valores'>
                 <picture>
-                    <source srcset={IconosValoresMovil} media="(max-width: 600px)" />
+                    <source srcSet={IconosValoresMovil} media="(max-width: 600px)" />
                     <img src={IconosValores} alt="Icono Valores" />
                 </picture>
             </div>

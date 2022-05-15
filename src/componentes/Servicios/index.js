@@ -23,10 +23,10 @@ function Servicios() {
     return (<div>
         <div className="container-logo-encabezado-Servicios">
             <img className='img-header' src={HeaderServicios} alt='Header Servicios' />
-            <div className='text-encima'>
-                <p className='t-1'>NUESTROS SERVICIOS</p>
-                <p className='t-2'>SOLUCIONES INTEGRALES</p>
-                <p className='t-3'>Y HUMANAS</p>
+            <div className='text-encima-servicios'>
+                <p className='t-1-servicios'>NUESTROS SERVICIOS</p>
+                <p className='t-2-servicios'>SOLUCIONES INTEGRALES</p>
+                <p className='t-3-servicios'>Y HUMANAS</p>
             </div>
         </div>
         <div className='c-nuestrasAmbulancias'>
@@ -67,12 +67,12 @@ function Servicios() {
         <div className='c-tabla'>
             <div className='i-tabla'>
                 <picture>
-                    <source srcset={ImgTablaComparativa} media="(max-width: 400px)" width='100%'/>
-                    <source srcset={ImgTablaComparativa} media="(max-width: 700px)" width='100%'/>
-                    <source srcset={ImgTablaComparativa} media="(max-width: 1000px)" width='100%'/>
-                    <img src={ImgTablaComparativa} alt="Icono Valores" width='100%'/>
+                    <source srcSet={ImgTablaComparativa} media="(max-width: 400px)" width='100%' />
+                    <source srcSet={ImgTablaComparativa} media="(max-width: 700px)" width='100%' />
+                    <source srcSet={ImgTablaComparativa} media="(max-width: 1000px)" width='100%' />
+                    <img src={ImgTablaComparativa} alt="Icono Valores" width='100%' />
                 </picture>
-                
+
             </div>
         </div>
         <div className='c-listadoServicios'>
@@ -202,7 +202,7 @@ function Servicios() {
                     </p>
                 </div>
                 <div className='i-panel-2'>
-                    <img className='icono-servicioCollap' src={IconoOutSourcing} alt='Icono' />
+                    <img className='icono-servicioCollap-outsourcing' src={IconoOutSourcing} alt='Icono' />
                 </div>
             </div>
             <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} >
@@ -230,7 +230,7 @@ function Servicios() {
                     </div>
                 </AccordionDetails>
             </Accordion>
-            <div className='c-panel-1' style={{paddingBottom: '50px'}}>
+            <div className='c-panel-1' style={{ paddingBottom: '50px' }}>
                 <div className='i-panel-1'>
                     <h2 className='h2-tituloServicios'>TRASLADO DE PACIENTES</h2>
                     <p className='p-textServicios'>

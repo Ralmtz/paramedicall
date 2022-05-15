@@ -19,16 +19,24 @@
 .navbar a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 
-.navbar a:hover{
+/* .navbar a:hover{
     color: #333333;
-}
+} */
 
 .img-logo-nav{
     width: 100%;
     margin-left: 10%;
+}
+
+.active{
+    color: #333333;
+
+}
+.noActive{
+    color: #ffffff;
 }
 
 @media only screen and (max-width: 720px) {

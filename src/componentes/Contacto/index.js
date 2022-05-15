@@ -1,16 +1,20 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './index.css';
 import ImgContacto from './FOTO-HEADER-CONTACTO.png';
 import ImgConsulta from './Consulta.png';
+
 function Contacto() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='container-full'>
       <div className="container-logo-encabezado">
         <img className='img-header' src={ImgContacto} alt='Siempre Listos' />
-        <div className='text-encima'>
-          <p className='t-1'>PONTE EN CONTACTO</p>
-          <p className='t-2'>SIEMPRE LISTOS ANTE</p>
-          <p className='t-3'>CUALQUIER EVENTUALIDAD</p>
+        <div className='text-encima-contacto'>
+          <p className='t-1-cont'>PONTE EN CONTACTO</p>
+          <p className='t-2-cont'>SIEMPRE LISTOS ANTE</p>
+          <p className='t-3-cont'>CUALQUIER EVENTUALIDAD</p>
         </div>
       </div>
           <div className="flex-container-ayuda">

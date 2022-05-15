@@ -92,10 +92,10 @@ function Inicio() {
     <div>
       <div className="container-logo-encabezado-Inicio">
         <img className='img-header' src={HeaderInicio} alt='Header Inicio' />
-        <div className='text-encima'>
-          <p className='t-1'>SEGURIDAD ES</p>
-          <p className='t-2'>CONTAR CON</p>
-          <p className='t-3'>PARAMEDICALL</p>
+        <div className='text-encima-inicio'>
+          <p className='t-1-inicio'>SEGURIDAD ES</p>
+          <p className='t-2-inicio'>CONTAR CON</p>
+          <p className='t-3-inicio'>PARAMEDICALL</p>
         </div>
       </div>
       <div className='c-apoyoMedico'>

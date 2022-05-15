@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import Logo from './Logo.svg'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useWindowDimensions from '../../Helpers'
 import { FiAlignJustify } from "react-icons/fi";
 import './index.css';
 function Navbar() {
   const { width } = useWindowDimensions();
-  const [open, setOpen] = useState(false);
-  const [ruta, setRuta] = useState("/");
-
-  console.log("ruta:",ruta);
-
-
+  const [open,setOpen] =useState(false);
+  
   return (
     <div>
       {
@@ -24,16 +20,16 @@ function Navbar() {
           <div className='navbar-list'>
             <ul>
               <li className='list-item'>
-                <Link to="/" onClick={()=> setRuta("/")} style={{color: ruta === '/' && 'black'}}>INICIO</Link>
+                <NavLink to="/"  className={({isActive})=> (isActive ? 'active' : 'noActive')}>INICIO</NavLink>
               </li>
               <li className='list-item'>
-                <Link to="/nosotros"  onClick={()=> setRuta("/nosotros")} style={{color: ruta === '/nosotros' && 'black'}} >NOSOTROS</Link>
+                <NavLink to="/nosotros" className={({isActive})=> (isActive ? 'active' : 'noActive')}>NOSOTROS</NavLink>
               </li>
               <li className='list-item'>
-                <Link to="/servicios" onClick={()=> setRuta("/servicios")} style={{color: ruta === '/servicios' && 'black'}}>SERVICIOS</Link>
+                <NavLink to="/servicios"className={({isActive})=> (isActive ? 'active' : 'noActive')} >SERVICIOS</NavLink>
               </li>
               <li className='list-item'>
-                <Link to="/contacto"  onClick={()=> setRuta("/contacto")} style={{color: ruta === '/contacto' && 'black'}}>CONTACTO</Link>
+                <NavLink to="/contacto" className={({isActive})=> (isActive ? 'active' : 'noActive')} >CONTACTO</NavLink>
               </li>
             </ul>
           </div>
@@ -55,16 +51,16 @@ function Navbar() {
                 open ? <div className='navbar-movil'>
                   <ul className='navbar-list' onClick={()=>setOpen(false)}>
                     <li className='list-item'>
-                      <Link to="/" onClick={()=> setRuta("/")} style={{color: ruta === '/' && 'black'}}>INICIO</Link>
+                      <Link to="/">INICIO</Link>
                     </li>
                     <li className='list-item'>
-                      <Link to="/nosotros" onClick={()=> setRuta("/nosotros")} style={{color: ruta === '/nosotros' && 'black'}}>NOSOTROS</Link>
+                      <Link to="/nosotros">NOSOTROS</Link>
                     </li>
                     <li className='list-item'>
-                      <Link to="/servicios" onClick={()=> setRuta("/servicios")} style={{color: ruta === '/servicios' && 'black'}}>SERVICIOS</Link>
+                      <Link to="/servicios">SERVICIOS</Link>
                     </li>
                     <li className='list-item'>
-                      <Link to="/contacto" onClick={()=> setRuta("/contacto")} style={{color: ruta === '/contacto' && 'black'}}>CONTACTO</Link>
+                      <Link to="/contacto">CONTACTO</Link>
                     </li>
                   </ul>
                 </div>

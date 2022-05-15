@@ -5,6 +5,31 @@
     text-align: center;
 }
 
+.text-encima-servicios {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+}
+
+.t-1-servicios {
+    font-size: 2vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.t-2-servicios {
+    font-size: 2.7vw;
+    white-space: nowrap;
+}
+
+.t-3-servicios {
+    font-size: 2.7vw;
+    white-space: nowrap;
+}
+
 .c-nuestrasAmbulancias {
     display: flex;
     flex-direction: column;
@@ -14,6 +39,7 @@
 .h1-nuestrasAmbulancias {
     color: #ea0e2c;
     padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .p-nuestrasAmbulancias {
@@ -53,7 +79,7 @@
 
 }
 
-.i-equipadasCon-2 ul li{
+.i-equipadasCon-2 ul li {
     padding: 0px 0 0px 20px;
     text-indent: -20px;
 }
@@ -62,7 +88,7 @@ ul {
     list-style-position: inside;
 }
 
-.img-tabla-comp{
+.img-tabla-comp {
     width: 100%;
 }
 
@@ -83,56 +109,68 @@ td {
     border: 1px solid;
     border-color: #ea0e2c;
 }
+
 .th-otros {
     font-size: 40px;
 }
-.c-listadoServicios{
+
+.c-listadoServicios {
     font-family: 'Open Sans', sans-serif;
     cursor: default;
     padding: 0 15% 0 15%;
 }
 
-.c-panel-1{
+.c-panel-1 {
     display: flex;
 }
-.i-panel-2{
+
+.i-panel-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.h2-tituloServicios{
+
+.h2-tituloServicios {
     font-family: 'Poppins', sans-serif;
     color: #ea0e2c;
     padding-top: 5%;
 }
-.p-textServicios{
+
+.p-textServicios {
     text-align: justify;
     padding-right: 3%;
     padding-bottom: 2%;
 }
-.icono-servicioCollap{
+
+.icono-servicioCollap {
     width: 100px;
     height: 100px;
 }
-.c-ventajas-servicio{
+.icono-servicioCollap-outsourcing {
+    width: 100px;
+}
+
+.c-ventajas-servicio {
     text-align: left;
 }
 
-.c-ventajas-servicio ul li{
+.c-ventajas-servicio ul li {
     padding: 0px 0 0px 20px;
     text-indent: -20px;
 }
-.css-o4b71y-MuiAccordionSummary-content{
+
+.css-o4b71y-MuiAccordionSummary-content {
     flex-direction: column;
 }
 
-.c-preguntas{
+.c-preguntas {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.h2-preguntasF{
+
+.h2-preguntasF {
     background-color: #ea0e2c;
     text-align: center;
     color: #ffffff;
@@ -140,13 +178,21 @@ td {
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
 }
-.i-preguntas{
+
+.i-preguntas {
     display: flex;
     flex-direction: column;
     padding: 2% 15% 2% 15%;
     display: flex;
     font-family: 'Open Sans', sans-serif;
 }
+
+@media only screen and (min-width: 1800px) {
+    .text-encima-servicios {
+      top: 45%;
+      left: 80%;
+    }
+  }
 
 @media only screen and (max-width: 800px) {
     .sc-equipadasCon {
@@ -160,16 +206,20 @@ td {
     .img-logoTabla {
         width: 100px;
     }
-    .h2-ventajasAhorros{
-       padding-right: '20px';
+
+    .h2-ventajasAhorros {
+        padding-right: '20px';
     }
+
     .i-equipadasCon {
         font-size: 12px;
     }
+
     .i-equipadasCon-2 {
         font-size: 12px;
     }
-    .h2-preguntasF{
+
+    .h2-preguntasF {
         font-size: 16px;
     }
 }
@@ -178,12 +228,15 @@ td {
     .c-tabla {
         padding: 0% 0% 2% 0%;
     }
-    .c-panel-1{
+
+    .c-panel-1 {
         flex-direction: column-reverse;
     }
+
     .i-equipadasCon {
         font-size: 10px;
     }
+
     .i-equipadasCon-2 {
         font-size: 10px;
     }

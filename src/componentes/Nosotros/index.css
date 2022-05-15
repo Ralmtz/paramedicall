@@ -12,6 +12,28 @@
     margin: 0px;
     background-color: #ea0e2c;
 }
+.text-encima-nosotros{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.t-1-nosotros{
+    font-size: 2vw;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .t-2-nosotros{
+    font-size: 2.7vw;
+    white-space: nowrap;
+  }
+  .t-3-nosotros{
+    font-size: 2.7vw;
+    white-space: nowrap;
+  }
 
 .text-nosotros{
     text-align: justify;
@@ -143,6 +165,14 @@
     border-color: #ea0e2c;
     padding: 1%;
 }
+
+@media only screen and (min-width: 1800px) {
+    .text-encima-nosotros{
+      top: 45%;
+      left: 80%;
+    }
+  }
+
 @media only screen and (max-width: 1000px) {
     .c-mision{
         padding-right: 10%;
