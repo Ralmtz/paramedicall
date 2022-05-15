@@ -7,6 +7,11 @@ import './index.css';
 function Navbar() {
   const { width } = useWindowDimensions();
   const [open, setOpen] = useState(false);
+  const [ruta, setRuta] = useState("/");
+
+  console.log("ruta:",ruta);
+
+
   return (
     <div>
       {
@@ -19,16 +24,16 @@ function Navbar() {
           <div className='navbar-list'>
             <ul>
               <li className='list-item'>
-                <Link to="/">INICIO</Link>
+                <Link to="/" onClick={()=> setRuta("/")} style={{color: ruta === '/' && 'black'}}>INICIO</Link>
               </li>
               <li className='list-item'>
-                <Link to="/nosotros">NOSOTROS</Link>
+                <Link to="/nosotros"  onClick={()=> setRuta("/nosotros")} style={{color: ruta === '/nosotros' && 'black'}} >NOSOTROS</Link>
               </li>
               <li className='list-item'>
-                <Link to="/servicios">SERVICIOS</Link>
+                <Link to="/servicios" onClick={()=> setRuta("/servicios")} style={{color: ruta === '/servicios' && 'black'}}>SERVICIOS</Link>
               </li>
               <li className='list-item'>
-                <Link to="/contacto">CONTACTO</Link>
+                <Link to="/contacto"  onClick={()=> setRuta("/contacto")} style={{color: ruta === '/contacto' && 'black'}}>CONTACTO</Link>
               </li>
             </ul>
           </div>
@@ -50,16 +55,16 @@ function Navbar() {
                 open ? <div className='navbar-movil'>
                   <ul className='navbar-list' onClick={()=>setOpen(false)}>
                     <li className='list-item'>
-                      <Link to="/">INICIO</Link>
+                      <Link to="/" onClick={()=> setRuta("/")} style={{color: ruta === '/' && 'black'}}>INICIO</Link>
                     </li>
                     <li className='list-item'>
-                      <Link to="/nosotros">NOSOTROS</Link>
+                      <Link to="/nosotros" onClick={()=> setRuta("/nosotros")} style={{color: ruta === '/nosotros' && 'black'}}>NOSOTROS</Link>
                     </li>
                     <li className='list-item'>
-                      <Link to="/servicios">SERVICIOS</Link>
+                      <Link to="/servicios" onClick={()=> setRuta("/servicios")} style={{color: ruta === '/servicios' && 'black'}}>SERVICIOS</Link>
                     </li>
                     <li className='list-item'>
-                      <Link to="/contacto">CONTACTO</Link>
+                      <Link to="/contacto" onClick={()=> setRuta("/contacto")} style={{color: ruta === '/contacto' && 'black'}}>CONTACTO</Link>
                     </li>
                   </ul>
                 </div>

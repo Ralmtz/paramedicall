@@ -10,20 +10,65 @@ import IconosValores from './IconosValores.png';
 import IconosValoresMovil from './IconosValoresMovil.png';
 import ImageGallery from 'react-image-gallery';
 import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css';
+import Img1 from './1.jpg';
+import Img2 from './2.jpg';
+import Img3 from './3.jpg';
+import Img4 from './4.jpg';
+import Img5 from './5.jpg';
+import Img6 from './6.jpg';
+import Img7 from './7.jpg';
+import Img8 from './8.jpg';
+import Img9 from './9.jpg';
+import Img10 from './10.jpg';
+import Img11 from './11.jpg';
+
 function nosotros() {
     const images = [
         {
-            original: 'https://picsum.photos/id/1018/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1018/250/150/',
+            original: Img1,
+            thumbnail: Img1,
         },
         {
-            original: 'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1015/250/150/',
+            original: Img2,
+            thumbnail: Img2,
         },
         {
-            original: 'https://picsum.photos/id/1019/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1019/250/150/',
+            original: Img3,
+            thumbnail: Img3,
         },
+        {
+            original: Img4,
+            thumbnail: Img4,
+        },
+        {
+            original: Img5,
+            thumbnail: Img5,
+        },
+        {
+            original: Img6,
+            thumbnail: Img6,
+        },
+        {
+            original: Img7,
+            thumbnail: Img7,
+        },
+        {
+            original: Img8,
+            thumbnail: Img8,
+        },
+        {
+            original: Img9,
+            thumbnail: Img9,
+        },
+        {
+            original: Img10,
+            thumbnail: Img10,
+        },
+        {
+            original: Img11,
+            thumbnail: Img11,
+        },
+       
     ];
     return (<>
         <div className="container-logo-nosotros">

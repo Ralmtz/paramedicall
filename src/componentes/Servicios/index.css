@@ -53,22 +53,15 @@
 
 }
 
-.i-equipadasCon-2 {
-
+.i-equipadasCon-2 ul li{
+    padding: 0px 0 0px 20px;
+    text-indent: -20px;
 }
 
 ul {
     list-style-position: inside;
 }
 
-.c-tabla {
-    /* display: flex; */
-    /* flex-direction: row; */
-}
-
-.i-tabla {
-    /* width: 100%; */
-}
 .img-tabla-comp{
     width: 100%;
 }
@@ -119,9 +112,15 @@ td {
 }
 .icono-servicioCollap{
     width: 100px;
+    height: 100px;
 }
 .c-ventajas-servicio{
-    text-align: justify;
+    text-align: left;
+}
+
+.c-ventajas-servicio ul li{
+    padding: 0px 0 0px 20px;
+    text-indent: -20px;
 }
 .css-o4b71y-MuiAccordionSummary-content{
     flex-direction: column;

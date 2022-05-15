@@ -5,9 +5,7 @@ import Logo from './logotipo-600x130.svg';
 import iconoFB from './iconoFB.svg';
 import iconoIG from './iconoIG.svg';
 import iconoWPP from './iconoWPP.svg';
-
 function Navbar() {
-
     return (
         <div className='footer'>
             <footer>
@@ -15,7 +13,7 @@ function Navbar() {
                     <p className='p-text'>ANTE CUALQUIER EVENTUALIDAD </p>
                     <p className='p-text'>RECIBE EL MEJOR TRATO MÉDICO</p>
                     <br />
-                    <a className='a-contactanos' href='/contacto' >CONTÁCTANOS</a>
+                    <a className='a-contactanos' /* onClick={()=>  navigate("/contacto")} */ href='/contacto' >CONTÁCTANOS</a>
                 </div>
                 <div className="container-imgLogo">
                     <div className="item-imglogo">

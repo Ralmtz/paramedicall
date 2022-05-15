@@ -10,7 +10,7 @@
   background-color: #ea0e2c;
   display: flex;
   align-items: center;
-  padding: 100px 15% 0 15%;
+  padding: 100px 15% 100px 15%;
 }
 .i-apoyoMedico:nth-child(1){
   display: flex;
@@ -39,7 +39,8 @@
 }
 
 .imgMedico {
-  width: 270px;
+  width: 350px;
+  /* height: 320px */
 }
 
 .c-slider-inicio {
