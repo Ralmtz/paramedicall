@@ -14,13 +14,10 @@ function Navbar() {
                 <div className='textos'>
                     <p className='p-text-1'>ANTE CUALQUIER EVENTUALIDAD </p>
                     <p className='p-text'>RECIBE EL MEJOR TRATO MÉDICO</p>
-                    <br />
+                    <div className='c-a-contactanos'>
                     <Link className='a-contactanos' to="/contacto" >CONTÁCTANOS</Link>
-                </div>
-                <div className="container-imgLogo">
-                    <div className="item-imglogo">
-                        <img className='img-lineaVida' src={LineaImg} alt='Linea Vida' />
                     </div>
+                        <img className='img-lineaVida' src={LineaImg} alt='Linea Vida' />
                 </div>
             </footer>
             <div className="container-logo">

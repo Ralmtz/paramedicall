@@ -234,7 +234,7 @@ function Servicios() {
                 <div className='i-panel-1'>
                     <h2 className='h2-tituloServicios'>TRASLADO DE PACIENTES</h2>
                     <p className='p-textServicios'>
-                        Este servicio cubre a pacientes tanto locales como foráneos que requieran esta atención, y se divide en tres tipos de traslados:
+                        Este servicio cubre a pacientes tanto locales como foráneos que requieran esta atención, y se divide en tres tipos de traslados: <span style={{color: 'white'}}>Este servicio cubre a pacientes tanto locales como</span>
                     </p>
                     <ul>
                         <li>Ordinarios</li>
