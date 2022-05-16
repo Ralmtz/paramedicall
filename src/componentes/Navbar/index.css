@@ -19,12 +19,8 @@
 .navbar a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    /* color: #ffffff; */
 }
 
-/* .navbar a:hover{
-    color: #333333;
-} */
 
 .img-logo-nav{
     width: 100%;
@@ -38,15 +34,20 @@
 .noActive{
     color: #ffffff;
 }
-
+.icon-menu{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    color: white;
+}
 @media only screen and (max-width: 720px) {
     .navbar{
-        justify-content: space-between;
+        /* justify-content: space-between; */
         font-size: 15px;
     }
     .navbar-movil{
         font-size: 10px;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         z-index: 40;
     }
     .navbar-movil a:hover{
@@ -101,7 +102,15 @@
         text-align: center;
         margin: 0px;
         padding: 0px;
-        /* border-style: solid; */
-        /* border-color: #ffffff; */
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .img-logo-nav{
+        width: 120px;
+    }
+    .icon-menu{
+        height: 40px;
+        width: 40px;
     }
 }

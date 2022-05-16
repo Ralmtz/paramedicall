@@ -21,8 +21,11 @@ import Img8 from './8.jpg';
 import Img9 from './9.jpg';
 import Img10 from './10.jpg';
 import Img11 from './11.jpg';
+import useWindowDimensions from '../../Helpers';
 
-function nosotros() {
+function Nosotros() {
+  const { width } = useWindowDimensions();
+
     const images = [
         {
             original: Img1,
@@ -126,8 +129,8 @@ function nosotros() {
             <h2 className='h2-valores'>NUESTROS VALORES</h2>
             <div className='i-valores'>
                 <picture>
-                    <source srcSet={IconosValoresMovil} media="(max-width: 600px)" />
-                    <img src={IconosValores} alt="Icono Valores" />
+                    <source width={width * .90} srcSet={IconosValoresMovil} media="(max-width: 600px)" />
+                    <img width={width * .85} src={IconosValores} alt="Icono Valores" />
                 </picture>
             </div>
         </div>
@@ -149,4 +152,4 @@ function nosotros() {
         </div>
     </>);
 }
-export default nosotros;
+export default Nosotros;

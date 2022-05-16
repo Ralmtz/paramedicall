@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './index.css';
 import '../base.css';
 import HeaderServicios from './FOTO-HEADER-SERVICIOS.png';
@@ -20,6 +20,11 @@ function Servicios() {
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return (<div>
         <div className="container-logo-encabezado-Servicios">
             <img className='img-header' src={HeaderServicios} alt='Header Servicios' />

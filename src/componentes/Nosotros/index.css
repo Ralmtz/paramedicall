@@ -128,13 +128,16 @@
     align-content: center;
     padding-bottom: 50px;
 }
+.img-valores-nos{
+    width: 100%;
+}
 
 .h2-valores{
     text-align: center;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
-    padding-bottom: 30px;
+    padding-bottom: 3%;
 }
 
 .c-slider{
@@ -145,6 +148,7 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
+    padding-top: 5%;
 }
 
 .p-slider:nth-child(2){
@@ -173,7 +177,7 @@
     }
   }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .c-mision{
         padding-right: 10%;
         padding-left: 10%;
@@ -184,7 +188,10 @@
     }
     .item-mision:nth-child(1){
         padding: 0 2% 0 0;
-    }    
+    }
+    .h2-valores{
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -227,5 +234,13 @@
     }
     .img-nosotros{
         height: 200px;
+    }
+    .p-slider:nth-child(1){
+        font-size: 12px;
+    }
+    
+    .p-slider:nth-child(2){
+        font-size: 20px;
+        padding-bottom: 3%;
     }
 }

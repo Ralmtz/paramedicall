@@ -43,7 +43,7 @@ function Navbar() {
                 </a>
               </div>
               <div>
-                <FiAlignJustify style={{ cursor: 'pointer', height: '50px', width: '50px', color: 'white' }} onClick={() => setOpen(!open)} />
+                <FiAlignJustify className='icon-menu' onClick={() => setOpen(!open)} />
               </div>
             </div>
             <div>

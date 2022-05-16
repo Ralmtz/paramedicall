@@ -16,7 +16,6 @@ import VideoParamedicall from './VideoParamedicall.mp4'
 import ImgAmbulancia from './ambulancia.png'
 import useWindowDimensions from '../../Helpers';
 import IconoMision from './IconoMision.png';
-
 import LogoMovilCliente1 from './LOGOS-CLIENTES-01-MOVIL.png';
 import LogoMovilCliente2 from './LOGOS-CLIENTES-02-MOVIL.png';
 import LogoMovilCliente3 from './LOGOS-CLIENTES-03-MOVIL.png';
@@ -27,6 +26,7 @@ import LogoMovilCliente7 from './LOGOS-CLIENTES-07-MOVIL.png';
 import LogoMovilCliente8 from './LOGOS-CLIENTES-08-MOVIL.png';
 import LogoMovilCliente9 from './LOGOS-CLIENTES-09-MOVIL.png';
 import LogoMovilCliente10 from './LOGOS-CLIENTES-10-MOVIL.png';
+import { Link } from "react-router-dom";
 
 function Inicio() {
   const { width } = useWindowDimensions();
@@ -133,7 +133,7 @@ function Inicio() {
         <p>NUESTRO MEJOR SERVICIO ES OFRECER UN</p>
         <p style={{paddingBottom: '20px'}}>TRATO CÁLIDO Y HUMANO</p>
         <div className='t-video'>
-          <video width={width > 600 ? 800 : 300} height={width > 600 ? 500 : 200} controls  style={{ backgroundColor: 'black' }}>
+          <video width={width > 600 ? width * .50 : width * .70} controls  style={{ backgroundColor: 'black'}}>
             <source src={VideoParamedicall} type="video/mp4" />
               Your browser does not support the video tag.
           </video>
@@ -183,7 +183,8 @@ function Inicio() {
             </div>
           </div>
           <div className='c-servicios'>
-            <a className='btn-servicios' href='/servicios'>MÁS INFORMACIÓN</a>
+            {/* <a className='btn-servicios' href='/servicios'>MÁS INFORMACIÓN</a> */}
+            <Link className='btn-servicios' to="/servicios" >MÁS INFORMACIÓN</Link>
           </div>
         </div>
       </div>

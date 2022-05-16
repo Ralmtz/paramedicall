@@ -7,7 +7,7 @@ import iconoIG from './iconoIG.svg';
 import iconoWPP from './iconoWPP.svg';
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Footer() {
     return (
         <div className='footer'>
             <footer>
@@ -33,4 +33,4 @@ function Navbar() {
             {<p className='atribucion'> ©{new Date().getFullYear()} PARAMEDICALL S.A de C.V | TODOS LOS DERECHOS RESERVADOS</p>}
         </div>);
 }
-export default Navbar;
+export default Footer;

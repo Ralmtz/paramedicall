@@ -151,6 +151,10 @@
     font-family: 'Open Sans', sans-serif;
     padding: 2px 0px;
   }
+  
+.item-contacto:nth-child(1) {
+  padding-bottom: 8%;
+}
 
 }
 
