@@ -51,16 +51,16 @@ function Navbar() {
                 open ? <div className='navbar-movil'>
                   <ul className='navbar-list' onClick={()=>setOpen(false)}>
                     <li className='list-item'>
-                      <Link to="/">INICIO</Link>
+                      <NavLink to="/" className={({isActive})=> (isActive ? 'active' : 'noActive')}>INICIO</NavLink>
                     </li>
                     <li className='list-item'>
-                      <Link to="/nosotros">NOSOTROS</Link>
+                      <NavLink to="/nosotros" className={({isActive})=> (isActive ? 'active' : 'noActive')}>NOSOTROS</NavLink>
                     </li>
                     <li className='list-item'>
-                      <Link to="/servicios">SERVICIOS</Link>
+                      <NavLink to="/servicios" className={({isActive})=> (isActive ? 'active' : 'noActive')}>SERVICIOS</NavLink>
                     </li>
                     <li className='list-item'>
-                      <Link to="/contacto">CONTACTO</Link>
+                      <NavLink to="/contacto" className={({isActive})=> (isActive ? 'active' : 'noActive')}>CONTACTO</NavLink>
                     </li>
                   </ul>
                 </div>

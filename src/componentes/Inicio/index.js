@@ -4,7 +4,9 @@ import './index.css';
 import '../base.css';
 import ImageGallery from 'react-image-gallery';
 import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css';
-import imgDoctor from './DOCTOR-ABOUT.png';
+import imgDoctor1600 from './DOCTOR-ABOUT-1600.png';
+import imgDoctor700 from './DOCTOR-ABOUT-700.png';
+import imgDoctor350 from './DOCTOR-ABOUT-350.png';
 import LogoCliente1 from './LOGOS-CLIENTES-01.png';
 import LogoCliente2 from './LOGOS-CLIENTES-02.png';
 import LogoCliente3 from './LOGOS-CLIENTES-03.png';
@@ -106,9 +108,7 @@ function Inicio() {
             Empresa consolidada y comprometida con la salud y la calidad de vida de las personas, ofreciendo servicios médicos prehospitalarios y de salud ocupacional con altos estándares de calidad y un equipo certificado de profesionales en la salud.
         </p>
         </div>
-        <div className='i-apoyoMedico'>
-          <img className='imgMedico' src={imgDoctor} alt='Médico' />
-        </div>
+          <img className='imgMedico' src={width > 800 ?  imgDoctor1600 : width > 420  ? imgDoctor700 : imgDoctor350} alt='Médico' />
       </div>
       <div className='c-slider-inicio'>
         <p className='p-slider-inicio'>CONFÍAN EN NOSOTROS</p>
@@ -183,7 +183,6 @@ function Inicio() {
             </div>
           </div>
           <div className='c-servicios'>
-            {/* <a className='btn-servicios' href='/servicios'>MÁS INFORMACIÓN</a> */}
             <Link className='btn-servicios' to="/servicios" >MÁS INFORMACIÓN</Link>
           </div>
         </div>
