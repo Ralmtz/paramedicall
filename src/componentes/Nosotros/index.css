@@ -17,7 +17,7 @@
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 75%;
     transform: translate(-50%, -50%);
 }
@@ -192,6 +192,9 @@
     .h2-valores{
         font-size: 30px;
     }
+    .img-nosotros{
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -208,16 +211,27 @@
     }    
 }
 
+@media only screen and (max-width: 800px) {
+    .img-nosotros{
+        height: 180px;
+    }
+}
 @media only screen and (max-width: 600px) {
     .p-t1{
         font-size: 1.5em;
     }
     .p-t2{
         font-size: 1.8em;
+        text-align: left;
     }
     .p-nosotros{
         font-size: 1.1em;
+        text-align: left;
     }
+
+.p-mision{
+    text-align: left;
+}
     .c-mision{
         flex-direction: column;
     }
@@ -233,7 +247,7 @@
         width: 70%;
     }
     .img-nosotros{
-        height: 200px;
+        height: 130px;
     }
     .p-slider:nth-child(1){
         font-size: 12px;
@@ -242,5 +256,10 @@
     .p-slider:nth-child(2){
         font-size: 20px;
         padding-bottom: 3%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .img-paramedicos{
+        width: 250px;
     }
 }

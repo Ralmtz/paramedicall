@@ -27,7 +27,7 @@ function Footer() {
                 <div className="item-logo">
                     <a href='https://facebook.com/paramedicallSadecv' target='_blank' rel='noreferrer'><img className='img-logo-r' src={iconoFB} alt='Facebook' /></a>
                     <a href='https://instagram.com/paramedicall3' target='_blank' rel='noreferrer'><img className='img-logo-r' src={iconoIG} alt='Instagram' /></a>
-                    <a href='https://wa.me/+528331220000?text=¡Estoy+interesado+en+sus+servicios!' target='_blank' rel='noreferrer'><img className='img-logo-r' src={iconoWPP} alt='WhatsApp' /></a>
+                    <a href='https://wa.me/+528333855523?text=Gracias por comunicarte a PARAMEDICALL, en que podemos  ayudarte.' target='_blank' rel='noreferrer'><img className='img-logo-r' src={iconoWPP} alt='WhatsApp' /></a>
                 </div>
             </div>
             {<p className='atribucion'> ©{new Date().getFullYear()} PARAMEDICALL S.A de C.V | TODOS LOS DERECHOS RESERVADOS</p>}

@@ -10,7 +10,7 @@
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 76%;
     transform: translate(-50%, -50%);
 }
@@ -288,8 +288,16 @@ td {
 
     .i-equipadasCon-2 {
         font-size: 12px;
+        padding-bottom: 30px;
     }
     .h1-nuestrasAmbulancias {
         font-size: 16px;
+    }
+    .img-valores-movil{
+        width: 200px;
+        height: 198px;
+    }
+    .h2-valores{
+        padding-bottom: 25px;
     }
 }

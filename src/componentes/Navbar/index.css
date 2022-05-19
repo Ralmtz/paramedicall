@@ -42,12 +42,10 @@
 }
 @media only screen and (max-width: 720px) {
     .navbar{
-        /* justify-content: space-between; */
         font-size: 15px;
     }
     .navbar-movil{
         font-size: 10px;
-        /* justify-content: space-between; */
         z-index: 40;
     }
     .navbar-movil a:hover{

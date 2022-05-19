@@ -1,16 +1,20 @@
 import React,{useEffect} from 'react';
 import './index.css';
 import ImgContacto from './FOTO-HEADER-CONTACTO.png';
+import ImgContacto700 from './FOTO-HEADER-CONTACTO-700.png';
 import ImgConsulta from './Consulta.png';
+import useWindowDimensions from '../../Helpers';
 
 function Contacto() {
+  const { width } = useWindowDimensions();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className='container-full'>
       <div className="container-logo-encabezado">
-        <img className='img-header' src={ImgContacto} alt='Siempre Listos' />
+        <img className='img-header' src={width > 450 ? ImgContacto : ImgContacto700} alt='Siempre Listos' />
         <div className='text-encima-contacto'>
           <p className='t-1-cont'>PONTE EN CONTACTO</p>
           <p className='t-2-cont'>SIEMPRE LISTOS ANTE</p>

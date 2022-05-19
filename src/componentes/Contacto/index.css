@@ -16,7 +16,7 @@
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 77%;
   transform: translate(-50%, -50%);
 }
@@ -119,11 +119,17 @@
     left: 80%;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .img-header {
+    height: 300px;
+  }
 
+}
 @media only screen and (max-width: 800px) {
 
   .img-header {
     width: 100%;
+    height: 180px;
   }
 
   .text-encima {
@@ -200,6 +206,10 @@
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
   }
+  .img-consulta {
+    margin-top: 15px;
+    height: 18rem;
+  }
 
 }
 
@@ -207,5 +217,9 @@
   .text-encima {
     top: 45%;
     left: 76%;
+  }
+  .img-header {
+    width: 100%;
+    height: 130px;
   }
 }

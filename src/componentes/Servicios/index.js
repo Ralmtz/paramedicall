@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react';
 import './index.css';
 import '../base.css';
 import HeaderServicios from './FOTO-HEADER-SERVICIOS.png';
+import HeaderServicios700 from './FOTO-HEADER-SERVICIOS-700.png';
 import IconoArea from './ICONO-AREAPARAMEDICALL.png';
 import IconoCMI from './ICONO-CMI.png';
 import IconoCME from './ICONO-CME.png';
@@ -13,6 +14,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Tooltip from '@mui/material/Tooltip';
+import useWindowDimensions from '../../Helpers';
 
 function Servicios() {
     const [expanded, setExpanded] = useState(false);
@@ -20,6 +22,8 @@ function Servicios() {
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
     };
+  const { width } = useWindowDimensions();
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -27,7 +31,7 @@ function Servicios() {
 
     return (<div>
         <div className="container-logo-encabezado-Servicios">
-            <img className='img-header' src={HeaderServicios} alt='Header Servicios' />
+            <img className='img-header' src={width > 450 ? HeaderServicios : HeaderServicios700} alt='Header Servicios' />
             <div className='text-encima-servicios'>
                 <p className='t-1-servicios'>NUESTROS SERVICIOS</p>
                 <p className='t-2-servicios'>SOLUCIONES INTEGRALES</p>

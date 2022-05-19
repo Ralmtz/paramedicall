@@ -1,12 +1,12 @@
 import React from 'react';
 import HeaderInicio from './FOTO-HEADER-INCIO.png';
+import HeaderInicio700 from './FOTO-HEADER-INCIO-700.png';
 import './index.css';
 import '../base.css';
 import ImageGallery from 'react-image-gallery';
 import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css';
 import imgDoctor1600 from './DOCTOR-ABOUT-1600.png';
 import imgDoctor700 from './DOCTOR-ABOUT-700.png';
-import imgDoctor350 from './DOCTOR-ABOUT-350.png';
 import LogoCliente1 from './LOGOS-CLIENTES-01.png';
 import LogoCliente2 from './LOGOS-CLIENTES-02.png';
 import LogoCliente3 from './LOGOS-CLIENTES-03.png';
@@ -93,7 +93,7 @@ function Inicio() {
   return (
     <div>
       <div className="container-logo-encabezado-Inicio">
-        <img className='img-header' src={HeaderInicio} alt='Header Inicio' />
+        <img className='img-header' src={width > 450 ? HeaderInicio : HeaderInicio700 } alt='Header Inicio' />
         <div className='text-encima-inicio'>
           <p className='t-1-inicio'>SEGURIDAD ES</p>
           <p className='t-2-inicio'>CONTAR CON</p>
@@ -108,7 +108,7 @@ function Inicio() {
             Empresa consolidada y comprometida con la salud y la calidad de vida de las personas, ofreciendo servicios médicos prehospitalarios y de salud ocupacional con altos estándares de calidad y un equipo certificado de profesionales en la salud.
         </p>
         </div>
-          <img className='imgMedico' src={width > 800 ?  imgDoctor1600 : width > 420  ? imgDoctor700 : imgDoctor350} alt='Médico' />
+          <img className='imgMedico' src={width > 800 ?  imgDoctor1600 : width > 420  ? imgDoctor700 : imgDoctor700} alt='Médico' />
       </div>
       <div className='c-slider-inicio'>
         <p className='p-slider-inicio'>CONFÍAN EN NOSOTROS</p>

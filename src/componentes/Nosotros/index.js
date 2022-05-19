@@ -2,6 +2,7 @@ import React from 'react';
 import '../base.css'
 import './index.css';
 import imgHeaderNosotros from './FOTO-HEADER-NOSOTROS.png';
+import imgHeaderNosotros700 from './FOTO-HEADER-NOSOTROS-700.png';
 import IconoMision from './IconoMision.png';
 import IconoVision from './IconoVision.png';
 import paramedicoMision from './paramedicoMision.jpg';
@@ -75,7 +76,7 @@ function Nosotros() {
     ];
     return (<>
         <div className="container-logo-nosotros">
-            <img className='img-nosotros' src={imgHeaderNosotros} alt='Header Nosotros' />
+            <img className='img-nosotros' src={width > 450 ? imgHeaderNosotros : imgHeaderNosotros700} alt='Header Nosotros' />
             <div className='text-encima-nosotros'>
                 <p className='t-1-nosotros'>SOBRE NOSOTROS</p>
                 <p className='t-2-nosotros'>TU APOYO MÉDICO</p>
@@ -129,8 +130,8 @@ function Nosotros() {
             <h2 className='h2-valores'>NUESTROS VALORES</h2>
             <div className='i-valores'>
                 <picture>
-                    <source width={width * .90} srcSet={IconosValoresMovil} media="(max-width: 600px)" />
-                    <img width={width * .85} src={IconosValores} alt="Icono Valores" />
+                    <source width={width * .80} srcSet={IconosValoresMovil} media="(max-width: 600px)" />
+                    <img className='img-valores-movil'/* width={width * .85} */ src={IconosValores} alt="Icono Valores" />
                 </picture>
             </div>
         </div>
