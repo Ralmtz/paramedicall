@@ -37,7 +37,7 @@
 
 .text-nosotros{
     text-align: justify;
-    padding: 5% 12% 5% 12%;
+    padding: 5% 12% 1% 12%;
     font-family: 'Poppins', sans-serif;
     background-color: #ea0e2c;
     color: #ffffff;
@@ -53,9 +53,9 @@
 }
 
 .p-nosotros{
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0px 25px 0px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.4em;
+    font-size: 18px;
 }
 
 .c-mision{
@@ -77,6 +77,31 @@
     flex-direction: row;
     align-items: center;
     align-content: space-between;
+}
+.c-fechasNosotros{
+    width: 100%;
+    padding: 0% 12% 0% 12%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    background-color: #ea0e2c;
+    color: #ffffff;
+}
+.i-fechaNosotros{
+    display: flex;
+    flex-direction: column;
+}
+.p-tituloFecha{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+.p-textFechas{
+    font-size: 18px;
+    line-height: 1.6;
+    padding-bottom: 15px;
 }
 
 .item-mision-logo{
@@ -127,6 +152,11 @@
     align-items: center;
     align-content: center;
     padding-bottom: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.img-valores-movil{
+    width: 100%;
 }
 .img-valores-nos{
     width: 100%;
@@ -195,9 +225,12 @@
     .img-nosotros{
         height: 300px;
     }
+    .c-fechasNosotros{
+        text-align: left;
+    }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
     .c-mision{
         padding-right: 5%;
         padding-left: 5%;
@@ -209,6 +242,34 @@
     .item-mision:nth-child(1){
         padding: 0 2% 0 0;
     }    
+    .i-valores{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .c-fechasNosotros{
+        width: 100%;
+        padding: 0% 12% 0% 12%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 5%;
+        font-family: 'Open Sans', sans-serif;
+        text-align: left;
+        background-color: #ea0e2c;
+        color: #ffffff;
+    }
+    .i-fechaNosotros{
+        display: flex;
+        flex-direction: column;
+    }
+    .p-tituloFecha{
+        font-size: 20px;
+        padding-bottom: 3px;
+    }
+    .p-textFechas{
+        font-size: 16px;
+        line-height: 1.6;
+        padding-bottom: 15px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -217,6 +278,14 @@
     }
 }
 @media only screen and (max-width: 600px) {
+    .c-mision{
+        padding-right: 12%;
+        padding-left: 12%;
+    }
+    .c-vision{
+        padding-right: 12%;
+        padding-left: 12%;
+    }
     .p-t1{
         font-size: 1.5em;
     }
@@ -225,7 +294,7 @@
         text-align: left;
     }
     .p-nosotros{
-        font-size: 1.1em;
+        font-size: 16px;
         text-align: left;
     }
 
@@ -247,7 +316,7 @@
         width: 70%;
     }
     .img-nosotros{
-        height: 130px;
+        height: 160px;
     }
     .p-slider:nth-child(1){
         font-size: 12px;
@@ -256,6 +325,23 @@
     .p-slider:nth-child(2){
         font-size: 20px;
         padding-bottom: 3%;
+    }
+    .c-fechasNosotros{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Open Sans', sans-serif;
+        text-align: left;
+        background-color: #ea0e2c;
+        color: #ffffff;
+    }
+    .p-tituloFecha{
+        font-size: 14px;
+        padding-bottom: 3px;
+    }
+    .p-textFechas{
+        font-size: 16px;
+        line-height: 1.6;
+        padding-bottom: 15px;
     }
 }
 @media only screen and (max-width: 600px) {
