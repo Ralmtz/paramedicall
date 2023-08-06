@@ -111,6 +111,7 @@
 }
 
 .i-slider-2-inicio {
+  padding-bottom: 40px;
   max-width: 70%;
 }
 
@@ -378,7 +379,7 @@
   }
 
   .img-ambulancia-serv {
-    width: 250px;
+    width: 300px;
     height: 220px;
   }
 

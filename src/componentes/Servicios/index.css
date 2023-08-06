@@ -182,7 +182,7 @@ td {
 .i-preguntas {
     display: flex;
     flex-direction: column;
-    padding: 2% 15% 2% 15%;
+    padding: 50px 15% 2%;
     display: flex;
     font-family: 'Open Sans', sans-serif;
 }
