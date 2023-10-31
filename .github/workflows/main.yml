@@ -33,7 +33,7 @@ jobs:
           local_path: ./*
           
           # remote_path: Ruta remota donde se copiaran los archivos del repositorio.
-          remote_path: /oc.projectcatapps.com
+          remote_path: /oc.projectcatapps.com/PRUEBA
           
           # SFTP args
           args: '-o ConnectTimeout=5'
