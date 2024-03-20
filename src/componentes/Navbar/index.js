@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from './Logo.svg'
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useWindowDimensions from '../../Helpers'
 import { FiAlignJustify } from "react-icons/fi";
 import './index.css';
