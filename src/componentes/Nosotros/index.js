@@ -25,54 +25,76 @@ import Img11 from './11.jpg';
 import useWindowDimensions from '../../Helpers';
 
 function Nosotros() {
-  const { width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
     const images = [
         {
             original: Img1,
             thumbnail: Img1,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img2,
             thumbnail: Img2,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img3,
             thumbnail: Img3,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img4,
             thumbnail: Img4,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img5,
             thumbnail: Img5,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img6,
             thumbnail: Img6,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img7,
             thumbnail: Img7,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img8,
             thumbnail: Img8,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img9,
             thumbnail: Img9,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img10,
             thumbnail: Img10,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
         {
             original: Img11,
             thumbnail: Img11,
+            originalAlt: 'FotoParamedicall',
+            thumbnailAlt: 'FotoThumbnail'
         },
-       
+
     ];
     return (<>
         <div className="container-logo-nosotros">
@@ -102,40 +124,40 @@ function Nosotros() {
             </div>
         </div>
         <div className='row'>
-        <div className='col-12 col-s12 c-fechasNosotros'>
-                    <div className='i-fechaNosotros'>
-                        <p className='p-tituloFecha'><strong>1984</strong></p>
-                        <p className='p-textFechas'>Recibió el título de médico cirujano por la Universidad Autónoma del Estado de Hidalgo, en la ciudad de Pachuca de Soto Hidalgo el día 26 de octubre de 1984.</p>
-                    </div>
-                    <div className='i-fechaNosotros'>
-                        <p className='p-tituloFecha'><strong>1984 -1988</strong></p>
-                        <p className='p-textFechas'>Se desarrolló como médico familiar en diversas clínicas del Instituto Mexicano de seguridad social en el programa seguridad y solidaridad social.</p>
-                    </div>
-                    <div className='i-fechaNosotros'>
-                        <p className='p-tituloFecha'><strong>1988 - 1991</strong></p>
-                        <p className='p-textFechas'>Realiza especialidad en Medicina Familiar en el Hospital General de Zona 3 de Ciudad Mante con calificación curricular de 13.00 puntos.</p>
-                    </div>
+            <div className='col-12 col-s12 c-fechasNosotros'>
+                <div className='i-fechaNosotros'>
+                    <p className='p-tituloFecha'><strong>1984</strong></p>
+                    <p className='p-textFechas'>Recibió el título de médico cirujano por la Universidad Autónoma del Estado de Hidalgo, en la ciudad de Pachuca de Soto Hidalgo el día 26 de octubre de 1984.</p>
                 </div>
-                <div className='c-fechasNosotros'>
-                    <div className='i-fechaNosotros'>
-                        <p className='p-tituloFecha'><strong>1991 - 1993</strong></p>
-                        <p className='p-textFechas'>Labora como médico adscrito en el Hospital General de Zona número 5 de la Delegación Estatal en Morelos.</p>
-                    </div>
-                    <div className='i-fechaNosotros'>
-                        <p className='p-tituloFecha'><strong>1993 - 1995</strong></p>
-                        <p className='p-textFechas'>Es designado como director de la Unidad Médica Familiar número 30 de Aldama.</p>
-                    </div>
-                    <div className='i-fechaNosotros'>
-                        <p className='p-tituloFecha'><strong>1995 - 2013</strong></p>
-                        <p className='p-textFechas'>Labora como Medico adscrito en la unidad de emergencias del Hospital General número 77 de Ciudad Madero.</p>
-                    </div>
+                <div className='i-fechaNosotros'>
+                    <p className='p-tituloFecha'><strong>1984 -1988</strong></p>
+                    <p className='p-textFechas'>Se desarrolló como médico familiar en diversas clínicas del Instituto Mexicano de seguridad social en el programa seguridad y solidaridad social.</p>
                 </div>
-                <div className='c-fechasNosotros' style={{paddingBottom: '30px'}}>
-                    <div className='i-fechaNosotros'>
-                        <p className='p-tituloFecha'><strong>2013 - Actualidad</strong></p>
-                        <p className='p-textFechas'>Labora en la empresa PARAMEDICALL S.A. de C.V. como responsable del servicio y personal médico.</p>
-                    </div>
+                <div className='i-fechaNosotros'>
+                    <p className='p-tituloFecha'><strong>1988 - 1991</strong></p>
+                    <p className='p-textFechas'>Realiza especialidad en Medicina Familiar en el Hospital General de Zona 3 de Ciudad Mante con calificación curricular de 13.00 puntos.</p>
                 </div>
+            </div>
+            <div className='c-fechasNosotros'>
+                <div className='i-fechaNosotros'>
+                    <p className='p-tituloFecha'><strong>1991 - 1993</strong></p>
+                    <p className='p-textFechas'>Labora como médico adscrito en el Hospital General de Zona número 5 de la Delegación Estatal en Morelos.</p>
+                </div>
+                <div className='i-fechaNosotros'>
+                    <p className='p-tituloFecha'><strong>1993 - 1995</strong></p>
+                    <p className='p-textFechas'>Es designado como director de la Unidad Médica Familiar número 30 de Aldama.</p>
+                </div>
+                <div className='i-fechaNosotros'>
+                    <p className='p-tituloFecha'><strong>1995 - 2013</strong></p>
+                    <p className='p-textFechas'>Labora como Medico adscrito en la unidad de emergencias del Hospital General número 77 de Ciudad Madero.</p>
+                </div>
+            </div>
+            <div className='c-fechasNosotros' style={{ paddingBottom: '30px' }}>
+                <div className='i-fechaNosotros'>
+                    <p className='p-tituloFecha'><strong>2013 - Actualidad</strong></p>
+                    <p className='p-textFechas'>Labora en la empresa PARAMEDICALL S.A. de C.V. como responsable del servicio y personal médico.</p>
+                </div>
+            </div>
         </div>
         <div className='c-mision'>
             <div className='item-mision'>
@@ -179,14 +201,14 @@ function Nosotros() {
             <p className='p-slider'>TRATO CÁLIDO Y HUMANO</p>
             <div className='i-slider'>
                 <div className='i-slider-2'>
-                <ImageGallery items={images}
-                    showBullets={true}
-                    showIndex={false}
-                    showThumbnails={true}
-                    lazyLoad={true}
-                    showPlayButton={false}
-                    autoPlay={true}
-                />
+                    <ImageGallery items={images}
+                        showBullets={true}
+                        showIndex={false}
+                        showThumbnails={true}
+                        lazyLoad={true}
+                        showPlayButton={false}
+                        autoPlay={true}
+                    />
                 </div>
             </div>
         </div>

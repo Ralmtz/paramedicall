@@ -25,7 +25,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
+    "build": "react-scripts build && npm run minify",
+    "minify": "sh -c 'terser $(ls -t ./build/static/js/*.js | head -n 1) --compress --mangle --output ./build/static/js/main.min.js && rm $(ls -t ./build/static/js/main.f83dda1a.js)'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -46,5 +47,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "minify": "^12.0.1",
+    "terser": "^5.37.0"
   }
 }

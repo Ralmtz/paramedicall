@@ -36,57 +36,74 @@ function Inicio() {
   const images = [
     {
       original: LogoCliente1,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoCliente2,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoCliente3,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoCliente4,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoCliente5,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoCliente6,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoCliente7,
+      originalAlt: 'logoCliente',
     },
   ];
 
   const imagesMovil = [
     {
       original: LogoMovilCliente1,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoMovilCliente2,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoMovilCliente3,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoMovilCliente4,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoMovilCliente5,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoMovilCliente6,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoMovilCliente7,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoMovilCliente8,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoMovilCliente9,
+      originalAlt: 'logoCliente',
     },
     {
       original: LogoMovilCliente10,
+      originalAlt: 'logoCliente',
     },
   ];
 
@@ -183,7 +200,7 @@ function Inicio() {
             </div>
           </div>
           <div className='c-servicios'>
-            <Link className='btn-servicios' to="/servicios" >MÁS INFORMACIÓN</Link>
+            <Link className='btn-servicios' to="/servicios" >MÁS INFORMACIÓN SOBRE SERVICIOS</Link>
           </div>
         </div>
       </div>
