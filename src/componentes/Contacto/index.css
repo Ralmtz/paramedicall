@@ -122,12 +122,14 @@
     left: 80%;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .img-header {
     height: 300px;
   }
 
 }
+
 @media only screen and (max-width: 800px) {
 
   .img-header {
@@ -160,10 +162,10 @@
     font-family: 'Open Sans', sans-serif;
     padding: 2px 0px;
   }
-  
-.item-contacto:nth-child(1) {
-  padding-bottom: 8%;
-}
+
+  .item-contacto:nth-child(1) {
+    padding-bottom: 8%;
+  }
 
 }
 
@@ -209,6 +211,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
   }
+
   .img-consulta {
     margin-top: 15px;
     height: 18rem;

@@ -93,7 +93,7 @@ function Inicio() {
   return (
     <div>
       <div className="container-logo-encabezado-Inicio">
-        <img className='img-header' src={width > 450 ? HeaderInicio : HeaderInicio700 } alt='Header Inicio' />
+        <img className='img-header' src={width > 450 ? HeaderInicio : HeaderInicio700} alt='Header Inicio' />
         <div className='text-encima-inicio'>
           <p className='t-1-inicio'>SEGURIDAD ES</p>
           <p className='t-2-inicio'>CONTAR CON</p>
@@ -106,9 +106,9 @@ function Inicio() {
           <p className='p-apoyoMedico-2'>APOYO MÉDICO</p>
           <p className='p-apoyoMedico-3'>
             Empresa consolidada y comprometida con la salud y la calidad de vida de las personas, ofreciendo servicios médicos prehospitalarios y de salud ocupacional con altos estándares de calidad y un equipo certificado de profesionales en la salud.
-        </p>
+          </p>
         </div>
-          <img className='imgMedico' src={width > 800 ?  imgDoctor1600 : width > 420  ? imgDoctor700 : imgDoctor700} alt='Médico' />
+        <img className='imgMedico' src={width > 800 ? imgDoctor1600 : width > 420 ? imgDoctor700 : imgDoctor700} alt='Médico' />
       </div>
       <div className='c-slider-inicio'>
         <p className='p-slider-inicio'>CONFÍAN EN NOSOTROS</p>
@@ -131,11 +131,11 @@ function Inicio() {
       </div>
       <div className='c-video'>
         <p>NUESTRO MEJOR SERVICIO ES OFRECER UN</p>
-        <p style={{paddingBottom: '20px'}}>TRATO CÁLIDO Y HUMANO</p>
+        <p style={{ paddingBottom: '20px' }}>TRATO CÁLIDO Y HUMANO</p>
         <div className='t-video'>
-          <video width={width > 600 ? width * .50 : width * .70} controls  style={{ backgroundColor: 'black'}}>
+          <video width={width > 600 ? width * .50 : width * .70} controls style={{ backgroundColor: 'black' }}>
             <source src={VideoParamedicall} type="video/mp4" />
-              Your browser does not support the video tag.
+            Your browser does not support the video tag.
           </video>
         </div>
       </div>
